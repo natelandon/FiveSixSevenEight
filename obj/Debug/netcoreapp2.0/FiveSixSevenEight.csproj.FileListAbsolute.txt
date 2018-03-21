@@ -1,0 +1,12 @@
+C:\Users\njlan\source\repos\FiveSixSevenEight\FiveSixSevenEight\bin\Debug\netcoreapp2.0\FiveSixSevenEight.deps.json
+C:\Users\njlan\source\repos\FiveSixSevenEight\FiveSixSevenEight\bin\Debug\netcoreapp2.0\FiveSixSevenEight.runtimeconfig.json
+C:\Users\njlan\source\repos\FiveSixSevenEight\FiveSixSevenEight\bin\Debug\netcoreapp2.0\FiveSixSevenEight.runtimeconfig.dev.json
+C:\Users\njlan\source\repos\FiveSixSevenEight\FiveSixSevenEight\bin\Debug\netcoreapp2.0\FiveSixSevenEight.dll
+C:\Users\njlan\source\repos\FiveSixSevenEight\FiveSixSevenEight\obj\Debug\netcoreapp2.0\FiveSixSevenEight.csprojResolveAssemblyReference.cache
+C:\Users\njlan\source\repos\FiveSixSevenEight\FiveSixSevenEight\obj\Debug\netcoreapp2.0\FiveSixSevenEight.csproj.CoreCompileInputs.cache
+C:\Users\njlan\source\repos\FiveSixSevenEight\FiveSixSevenEight\obj\Debug\netcoreapp2.0\FiveSixSevenEight.AssemblyInfoInputs.cache
+C:\Users\njlan\source\repos\FiveSixSevenEight\FiveSixSevenEight\obj\Debug\netcoreapp2.0\FiveSixSevenEight.AssemblyInfo.cs
+C:\Users\njlan\source\repos\FiveSixSevenEight\FiveSixSevenEight\bin\Debug\netcoreapp2.0\FiveSixSevenEight.pdb
+C:\Users\njlan\source\repos\FiveSixSevenEight\FiveSixSevenEight\obj\Debug\netcoreapp2.0\FiveSixSevenEight.dll
+C:\Users\njlan\source\repos\FiveSixSevenEight\FiveSixSevenEight\obj\Debug\netcoreapp2.0\FiveSixSevenEight.pdb
+C:\Users\njlan\source\repos\FiveSixSevenEight\FiveSixSevenEight\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs

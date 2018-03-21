@@ -1,0 +1,82 @@
+@page
+@model FiveSixSevenEight.Pages.DanceEvents.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<div><h2>Create</h2></div>
+
+
+<h4>DanceEvent</h4>
+<hr />
+<div>
+    <div>
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="DanceEvent.DanceEventName" class="control-label"></label>
+                <input asp-for="DanceEvent.DanceEventName" class="form-control" />
+                <span asp-validation-for="DanceEvent.DanceEventName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DanceEvent.EventDate" class="control-label"></label>
+                <input asp-for="DanceEvent.EventDate" class="form-control" />
+                <span asp-validation-for="DanceEvent.EventDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DanceEvent.City" class="control-label"></label>
+                <input asp-for="DanceEvent.City" class="form-control" />
+                <span asp-validation-for="DanceEvent.City" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DanceEvent.State" class="control-label"></label>
+                <input asp-for="DanceEvent.State" class="form-control" />
+                <span asp-validation-for="DanceEvent.State" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DanceEvent.Website" class="control-label"></label>
+                <input asp-for="DanceEvent.Website" class="form-control" />
+                <span asp-validation-for="DanceEvent.Website" class="text-danger"></span>
+            </div>
+                        <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <table id="createtable">
+                        <tr>
+                            @{
+                                int cnt = 0;
+
+                                foreach (var category in Model.AssignedCategoryDataList)
+                                {
+                                    if (cnt++ % 3 == 0)
+                                    {
+                                        @:</tr><tr>
+                                    }
+                                    @:<td>
+                                        <input type="checkbox"
+                                               name="selectedCategories"
+                                               value="@category.CategoryID"
+                                               @(Html.Raw(category.Assigned ? "checked=\"checked\"" : "")) />
+                                               @category.CategoryID @:  @category.DanceEventType
+                                    @:</td>
+                                }
+                                @:</tr>
+                            }
+                    </table>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

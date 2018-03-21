@@ -1,0 +1,52 @@
+@page "{id:int?}"
+@model FiveSixSevenEight.Pages.DanceEvents.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2 id="texty">Delete</h2>
+<p class="text-danger">@Model.ErrorMessage</p>
+<h4 id="texty">Are you sure you want to delete this?</h4>
+<div>
+    <h4 id="texty">Dance Event</h4>
+    <hr />
+    <dl class="dl-horizontal" id="texty">
+        <dt>
+            @Html.DisplayNameFor(model => model.DanceEvent.DanceEventName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DanceEvent.DanceEventName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DanceEvent.EventDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DanceEvent.EventDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DanceEvent.City)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DanceEvent.City)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DanceEvent.State)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DanceEvent.State)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DanceEvent.Website)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DanceEvent.Website)
+        </dd>
+    </dl>
+
+    <form method="post">
+        <input type="hidden" asp-for="DanceEvent.ID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index" id="texty">Back to List</a>
+    </form>
+</div>

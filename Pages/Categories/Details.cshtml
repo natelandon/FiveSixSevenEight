@@ -1,0 +1,26 @@
+@page
+@model FiveSixSevenEight.Pages.Categories.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+<div id="topper">
+    <h2 id="texty">Details</h2>
+
+    <div id="texty">
+        <h4>Category</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Category.DanceEventType)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Category.DanceEventType)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a asp-page="./Edit" asp-route-id="@Model.Category.CategoryID">Edit</a> |
+        <a asp-page="./Index">Back to List</a>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+@page
+@model FiveSixSevenEight.Pages.Categories.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+<div id="topper">
+<h2 id="texty">Delete</h2>
+
+<h3 id="texty">Are you sure you want to delete this?</h3>
+<div>
+    <h4 id="texty">Category</h4>
+    <hr />
+    <dl class="dl-horizontal" id="texty">
+        <dt>
+            @Html.DisplayNameFor(model => model.Category.DanceEventType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Category.DanceEventType)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Category.CategoryID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>
+</div>
